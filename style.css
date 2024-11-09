@@ -1,0 +1,318 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  color: aliceblue;
+  padding: 0.4rem 1.5rem;
+  border-radius: 3rem;
+  z-index: 1000;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  position: relative;
+  color: aliceblue;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  left: 0;
+  height: 3px;
+  top: 100%;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, rgb(253, 166, 51), rgb(255, 59, 59));
+}
+
+.nav-links li a:hover::before {
+  width: 100%;
+}
+
+.visit-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, rgb(253, 166, 51), rgb(255, 59, 59));
+}
+
+.visit-btn:hover {
+  background: linear-gradient(to right, rgb(255, 59, 59), rgb(253, 166, 51));
+  transform: scale(1.03);
+  color: rgba(0, 0, 0);
+}
+
+section{
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0; 
+  background-color: rgb(255, 235, 216);/* Optional: Adds padding around the section */
+}
+
+.about-content {
+  display: flex;
+  gap: 10rem; /* Adjust spacing between image and text */
+  align-items: center; /* Ensures the text aligns with the image vertically */
+  justify-content: center;
+}
+
+.about img {
+  width: 50vh;
+  border-radius: 50%;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Aligns text to the left */
+  gap: 1.5rem;
+}
+
+.info-box h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.info-box h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.info-box span{
+  background: linear-gradient(to right, rgb(255, 59, 59), rgb(253, 166, 51));
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials i {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.socials i:hover {
+  transform: scale(1.1);
+}
+
+.section-title{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+
+}
+
+.experience-info{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.experience img{
+  width: 60vh;
+  border-radius: 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+
+}
+
+.grid-card{
+  border: 2px solid black;
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.grid-card:hover{
+  transform: scale(1.02);
+  background-color: black;
+  color: aliceblue;
+
+}
+
+.grid-card{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.grid-card i{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.grid-card span{
+  font-size: 1.7rem;
+  font-weight: 500;
+  background: linear-gradient(to right, rgb(255, 59, 59), rgb(253, 166, 51));
+  background-clip: text ;
+  color: transparent;
+}
+.grid-card p{
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+.grid-card h3{
+  font-size: 1.2rem;
+  margin: 7px;
+}
+
+::-webkit-scrollbar{
+  width: 20px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(128, 129, 129);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to bottom, rgb(255, 59, 59), rgb(253, 166, 51));
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 2rem;
+}
+
+.project-card{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card:hover{
+  background-color: black;
+  color: white;
+  transform: translateY(-10px)scale(1.02);
+
+}
+
+.project-card img{
+  width: 30vh;
+  border-radius: 4rem;
+}
+
+.project-card:hover .btn{
+  border: 2px solid white;
+  color: white;
+
+}
+
+.project-card:hover .btn:hover{
+  border: 2px solid white;
+  background-color: white;
+  color:black;
+}
+
+.project-card h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
