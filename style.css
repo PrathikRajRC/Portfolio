@@ -94,14 +94,22 @@ section{
   padding: 8rem 12%;
   width: 100%;
   position: relative;
-
 }
+
 .about {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 0; 
-  background-color: rgb(255, 235, 216);/* Optional: Adds padding around the section */
+  background-color: rgb(255, 235, 216);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/617/161/non_2x/abstract-gradient-pastel-blue-and-purple-background-neon-pastel-color-template-for-website-or-presentation-free-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bac1{
+  width: 100vh;
 }
 
 .about-content {
@@ -185,6 +193,13 @@ section{
 
 }
 
+.experience{
+  background-color: rgb(200, 226, 247);
+  /* background-image: url("https://img.freepik.com/free-photo/blue-toned-paper-sheets-with-copy-space_23-2148320450.jpg?t=st=1731243840~exp=1731247440~hmac=4a7ae9a9c0114c40d3b4a9f4fb82787654c38aa0973371a435f0cae9af5deb6a&w=1380"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
 .experience-info{
   display:flex;
   align-items: center;
@@ -261,6 +276,13 @@ section{
   background: linear-gradient(to bottom, rgb(255, 59, 59), rgb(253, 166, 51));
 }
 
+.projects{
+  background-color: rgb(162, 255, 255);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/617/161/non_2x/abstract-gradient-pastel-blue-and-purple-background-neon-pastel-color-template-for-website-or-presentation-free-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .projects-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -268,6 +290,7 @@ section{
 }
 
 .project-card{
+  background-color: rgba(119, 222, 248, 0.226);
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
